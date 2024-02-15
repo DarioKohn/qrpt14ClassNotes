@@ -34,7 +34,7 @@ let interns: Array<Employee> = [
     new Employee(5, 'Chewbacca', 9009009090, 'argggggggggh@aragg.com'),
     new Employee(6, 'Han Solo', 9019019010, 'iknow@iknow.com'),
 ]; 
-
+//forEach is a method to use the forLoop 
 interns.forEach((person) => {
     console.log(`new intern info ${person.id} ${person.name} ${person.phone} ${person.email}`)
 }); 
