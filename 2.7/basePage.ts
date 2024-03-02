@@ -17,6 +17,7 @@ export class BasePage {
         if(options && options.url) this.url = options.url
     }; 
     async navigate(url?: string): Promise<void> {
+        await this.driver.manage().window().maximize(); 
         if (url) return await this.driver.get(url) //!is when the url is given in the test i.e. page.navigate('wwww.someSite.com')
         else if (this.url) return await this.driver.get(this.url)//!is when url is given in the pageObject
         else 
